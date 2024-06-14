@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+.container {
+    max-width: 1380000px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header {
+    background-image: url("https://fondosmil.co/fondo/17538.jpg");
+    background-size: cover;
+    width: 1e+06px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: center center;
+}
+.header_camisas{
+    background-image: url('https://pbs.twimg.com/media/D5q-_NKXoAAroIp.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color:black;
+}
+.header h1 {
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.048);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+}
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 180px;
+    height: auto;
+}
+.catalogo {
+    margin-top: 15px;
+}
+.header_camisas_2{
+    background-image: url('https://img.freepik.com/fotos-premium/accesorios-hombres-sobre-fondo-negro_117255-1388.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color:white;
+}

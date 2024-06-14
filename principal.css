@@ -1,0 +1,144 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.header {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header h1 {
+    font-size: 2em;
+    background-color: #4dafff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+.h2 {
+    font-size: 1.4em;
+    background-color: #4dafff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    width: 19%;
+}
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 180px;
+    height: auto;
+}
+nav {
+    background-color: #4dafff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.xd {
+    max-width: 120000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.discounts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.discount {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.discount img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* para poner estilo al boton en la seccion navegar a pantalones etc */
+.boton-navegar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4dafff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+.boton-navegar:hover {
+    background-color: #379cf0;
+}
+/* seccion de pantalones estilos */
+.container-pant {
+    max-width: 1380000px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pant {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    transition: transform 0.4s;
+}
+.pant img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+.pant:hover {
+    transform: translateY(-5px);
+}
+.pant:hover img {
+    transform: scale(1.10);
+}
+
+/* estilo para seccion de contactanos */
+.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 1px 0;
+    text-align: center;
+}
+.contact-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.4em;
+    color: #fff;
+    text-align: top;
+}
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+}
+.social-links a:hover {
+    color: #6374d6;
+}
+

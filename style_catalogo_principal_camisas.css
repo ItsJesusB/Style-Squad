@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+.container {
+    max-width: 1380000px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header{
+    background-image: url('https://fondosmil.co/fondo/17538.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color:black;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 180px;
+    height: auto;
+}
+.catalogo {
+    margin-top: 15px;
+}
+
+.button {
+    --color: #4dafff;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 2px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    }
+    
+    .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+    }
+    
+    .button::before {
+    top: -1em;
+    left: -1em;
+    }
+    
+    .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+    }
+    
+    .button:hover::before, .button:hover::after {
+    height: 430px;
+    width: 510px; /*Aplica el ancho a la animacion del boton */
+    }
+    
+    .button:hover {
+    color: rgb(255, 255, 255);
+    }
+    
+    .button:active {
+    filter: brightness(.8);
+    }
+    

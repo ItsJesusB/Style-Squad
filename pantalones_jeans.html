@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalones Jeans</title>
+    <!-- Vincula el archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="imagenes_diseño/logo.png">
+    <!-- <link rel="stylesheet" href="style_paginas_accesorios.css"> -->
+    <!-- <link rel="stylesheet" href="style_catalogo_principal_accesorios.css"> -->
+</head>
+<body class="container">
+    <!-- Fuente de letra para todo el documento -->
+    <font face="Arial">
+        <!-- Encabezado con el logo y el título del catálogo -->
+        <div class="header">
+            <!-- esta "clase-trajes" es para especificar en el css donde vamos a color las imagenes de fondo especifico -->
+            <div class="header-jeans">
+                <a href="pagina principal.html"><img src="imagenes_diseño/logo.png" alt="Logo" class="logo"></a>
+                <h1>Catálogo de Pantalones Jeans para Hombres</h1>
+            </div>
+        </div>
+        <br><br><br>
+        <!-- Contenedor de los productos, utiliza flexbox para distribuir los productos -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Primer producto del catálogo -->
+            <div class="pant">
+                <!-- Imagen del producto -->
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61iX8UAvcxL._AC_UX679_.jpg" width="200" height="400" alt="Jean Clásico de Corte Recto">
+                <!-- Nombre del producto -->
+                <h3>Jean Clásico de Corte Recto</h3>
+                <!-- Precio del producto -->
+                <p class="precio">Precio: $120,000 COP</p>
+                <br>
+                <!-- Descripción del producto -->
+                <p>Descripción: Un pantalón de mezclilla clásico con corte recto. Ideal para un look casual y versátil.</p>
+                <br><br>
+                <!-- Tabla con las tallas disponibles -->
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="6">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                        <td>38</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Formulario para la selección de talla y color, y compra del producto -->
+                <form action="/registrardatos.php" method="post">
+                    <!-- Detalle para seleccionar la talla -->
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <!-- Opciones de tallas -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="28">28   
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                                <input type="radio" name="Ntalla" value="38">38
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Detalle para seleccionar el color -->
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <!-- Opciones de colores -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Azul Oscuro
+                                <input type="radio" name="Ncolor" value="2">Azul Medio
+                                <input type="radio" name="Ncolor" value="3">Negro
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Botón para comprar el producto -->
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Repite el mismo formato para los demás productos -->
+            <!-- Segundo producto del catálogo -->
+            <div class="pant">
+                <img src="https://img01.ztat.net/article/spp-media-p1/e512adbcb5dd41b28f6194cc364d6fb6/3ffb7b74f03d4af1b1d2a60c7fc0d02b.jpg?imwidth=762" width="320" height="400" alt="Jean Skinny Fit">
+                <h3>Jean Skinny Fit</h3>
+                <p class="precio">Precio: $140,000 COP</p>
+                <br>
+                <p>Descripción: Pantalón ajustado desde la cadera hasta el tobillo, con un diseño moderno y estilizado.</p>
+                <br><br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="6">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Formulario para la selección de talla y color, y compra del producto -->
+                <form action="/registrardatos.php" method="post">
+                    <!-- Detalle para seleccionar la talla -->
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <!-- Opciones de tallas -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="28">28   
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Detalle para seleccionar el color -->
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <!-- Opciones de colores -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Azul Claro
+                                <input type="radio" name="Ncolor" value="2">Negro
+                                <input type="radio" name="Ncolor" value="3">Gris
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Botón para comprar el producto -->
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Tercer producto del catálogo -->
+            <div class="pant">
+                <img src="https://th.bing.com/th/id/R.43cbdd3759eb08c1d829ecccdb00d26e?rik=dv8ef848Q8a47w&pid=ImgRaw&r=0" width="320" height="400" alt="Jean Skinny Fit">
+                <h3>Jean Bootcut</h3>
+                <p class="precio">Precio: $130,000 COP</p>
+                <br>
+                <p>Descripción: Mezclilla con corte acampanado en la parte inferior, perfecto para usar con botas.</p>
+                <br><br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="6">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                        <td>38</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Formulario para la selección de talla y color, y compra del producto -->
+                <form action="/registrardatos.php" method="post">
+                    <!-- Detalle para seleccionar la talla -->
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <!-- Opciones de tallas -->
+                            <div style="display: inline-block;">   
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                                <input type="radio" name="Ntalla" value="38">38
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Detalle para seleccionar el color -->
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <!-- Opciones de colores -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Azul Oscuro
+                                <input type="radio" name="Ncolor" value="2">Negro
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Botón para comprar el producto -->
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Cuarto producto del catálogo -->
+            <div class="pant">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91HMEnOYf6L._AC_SX569_.jpg" width="200" height="400" alt="Jean Skinny Fit">
+                <h3>Jean de Tiro Alto</h3>
+                <p class="precio">Precio: $150,000 COP</p>
+                <br>
+                <p>Descripción: Mezclilla con corte acampanado en la parte inferior, perfecto para usar con botas.</p>
+                <br><br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="6">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Formulario para la selección de talla y color, y compra del producto -->
+                <form action="/registrardatos.php" method="post">
+                    <!-- Detalle para seleccionar la talla -->
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <!-- Opciones de tallas -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="28">28  
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                                
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Detalle para seleccionar el color -->
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <!-- Opciones de colores -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Azul Medio
+                                <input type="radio" name="Ncolor" value="2">Negro
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Botón para comprar el producto -->
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Quinto producto del catálogo -->
+            <div class="pant">
+                <img src="https://static.kiabi.es/images/jogg-jean-desgastado-denim-hombre-talla-s-xxl-yl894_1_frf1.jpg" width="320" height="400" alt="Jean Skinny Fit">
+                <h3>Jean Desgastado</h3>
+                <p class="precio">Precio: $135,000 COP</p>
+                <br>
+                <p>Descripción: Mezclilla con detalles desgastados y roturas, para un look casual y moderno.</p>
+                <br><br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="6">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Formulario para la selección de talla y color, y compra del producto -->
+                <form action="/registrardatos.php" method="post">
+                    <!-- Detalle para seleccionar la talla -->
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <!-- Opciones de tallas -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="28">28  
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                                
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Detalle para seleccionar el color -->
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <!-- Opciones de colores -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Azul Claro
+                                <input type="radio" name="Ncolor" value="2">Azul Medio
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Botón para comprar el producto -->
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Sexto producto del catálogo -->
+            <div class="pant">
+                <img src="https://i5.walmartimages.com/seo/George-Men-s-Relaxed-Straight-Fit-Jeans_7cd853ae-beb4-45e1-a8d2-a4cbb2064c04_1.8951d0ed57157326b25f15b8747a7bad.jpeg" width="320" height="400" alt="Jean Skinny Fit">
+                <h3>Jean Relaxed Fit</h3>
+                <p class="precio">Precio: $125,000 COP</p>
+                <br>
+                <p>Descripción: Pantalón de corte amplio y relajado, ideal para un look cómodo y desenfadado.</p>
+                <br><br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="6">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                        <td>38</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Formulario para la selección de talla y color, y compra del producto -->
+                <form action="/registrardatos.php" method="post">
+                    <!-- Detalle para seleccionar la talla -->
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <!-- Opciones de tallas -->
+                            <div style="display: inline-block;">   
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                                <input type="radio" name="Ntalla" value="38">38
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Detalle para seleccionar el color -->
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <!-- Opciones de colores -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Azul Claro
+                                <input type="radio" name="Ncolor" value="2">Azul Medio
+                                <input type="radio" name="Ncolor" value="3">Negro
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Botón para comprar el producto -->
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="posicion-boton">
+            <a href="catalogo_principal_pantalones.html"><button class="button">Volver al Catalogo Principal</button></a>
+        </div>
+    </font>
+</body>
+</html>

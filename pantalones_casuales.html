@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalones Casuales</title>
+    <!-- Vincula el archivo de estilos CSS -->
+    <link rel="stylesheet" href="style_paginas_accesorios.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style_catalogo_principal_accesorios.css"> -->
+    <link rel="website icon" type="png" href="imagenes_diseño/logo.png">
+</head>
+<body class="container">
+    <font face="Arial">
+        <!-- Encabezado con el logo y el título del catálogo -->
+        <div class="header">
+            <!-- esta "clase-casual" es para especificar en el css donde vamos a color las imagenes de fondo especifico -->
+            <div class="header-casual">
+                <a href="pagina principal.html"><img src="imagenes_diseño/logo.png" alt="Logo" class="logo"></a>
+                <h1>Catálogo de Pantalones Casuales</h1>
+            </div>
+        </div>
+        <br><br><br>
+        <!-- Contenedor de los productos, utiliza flexbox para distribuir los productos -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Primer producto del catálogo -->
+            <div class="pant">
+                <!-- Imagen del producto -->
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61bAnqM2bOL._AC_UL1500_.jpg" width="200" height="400" alt="Pantalón Casual en Algodón Azul Oscuro">
+                <!-- Nombre del producto -->
+                <h3>Pantalón Casual en Algodón</h3>
+                <!-- Precio del producto -->
+                <p class="precio">Precio: $179,900 COP</p>
+                <br>
+                <!-- Descripción del producto -->
+                <p>Descripción: Pantalón casual de algodón, ideal para uso diario con corte regular fit.</p>
+                <br><br>
+                <!-- Tabla con las tallas disponibles -->
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                        <td>38</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Formulario para la selección de talla y color, y compra del producto -->
+                <form action="/registrardatos.php" method="post">
+                    <!-- Detalle para seleccionar la talla -->
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                                <input type="radio" name="Ntalla" value="38">38
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Detalle para seleccionar el color -->
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Azul Oscuro">Azul Oscuro
+                                <input type="radio" name="Ncolor" value="Gris">Gris
+                                <input type="radio" name="Ncolor" value="Beige">Beige
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Botón para comprar el producto -->
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Repite el mismo formato para los demás productos -->
+            <!-- Segundo producto del catálogo -->
+            <div class="pant">
+                <img src="https://falabella.scene7.com/is/image/Falabella/881990678_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70" width="300" height="400" alt="Pantalón Chino Algodón Hombre Christian Lacroix">
+                <h3>Pantalón Chino Algodón Hombre Christian Lacroix</h3>
+                <p class="precio">Precio: $23,990 COP</p>
+                <br>
+                <p>Descripción: Pantalón chino de algodón con ajuste slim fit, perfecto para un look casual y elegante.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                        <td>38</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                                <input type="radio" name="Ntalla" value="38">38
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Verde">Verde
+                                <input type="radio" name="Ncolor" value="Beige">Beige
+                                <input type="radio" name="Ncolor" value="Azul Marino">Azul Marino
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Tercer producto del catálogo -->
+            <div class="pant">
+                <img src="https://th.bing.com/th/id/R.f92ac90be5b86f12f927727082a44aba?rik=eYJQM7xW%2fXtqTA&pid=ImgRaw&r=0" width="300" height="400" alt="Pantalón Cargo Verde Oscuro O'Neill">
+                <h3>Pantalón Cargo Verde Oscuro O'Neill</h3>
+                <p class="precio">Precio: $24,490 COP</p>
+                <br>
+                <p>Descripción: Pantalón cargo de estilo outdoor, resistente y cómodo para actividades al aire libre.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Verde Oscuro">Verde Oscuro
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Cuarto producto del catálogo -->
+            <div class="pant">
+                <img src="https://falabella.scene7.com/is/image/Falabella/882680660_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70" width="300" height="400" alt="Pantalón Slim Fit Algodón Hombre Basement">
+                <h3>Pantalón Slim Fit Algodón Hombre Basement</h3>
+                <br>
+                <p class="precio">Precio: $20,990 COP</p>
+                <br>
+                <p>Descripción: Pantalón slim fit de algodón, ofrece un look moderno y ajustado.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>28</td>
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="20">20
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Verde">Verde
+                                <input type="radio" name="Ncolor" value="Gris">Gris
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Quinto producto del catálogo -->
+            <div class="pant">
+                <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/72729671_1/w=1500,h=1500" width="300" height="360" alt="Pantalón Slim Fit Algodón Hombre Basement">
+                <h3>Pantalón Chino para Hombre Slim GAP</h3>
+                <br>
+                <p class="precio">Precio: $209.990 COP</p>
+                <br>
+                <p>Descripción: Pantalones chinos slim para hombre de algodón de GAP, ideal para cualquier temporada. Combina comodidad y estilo sobrio.</p>
+                <br><br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>30</td>
+                        <td>32</td>
+                        <td>34</td>
+                        <td>36</td>
+                        <td>38</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="30">30
+                                <input type="radio" name="Ntalla" value="32">32
+                                <input type="radio" name="Ntalla" value="34">34
+                                <input type="radio" name="Ntalla" value="36">36
+                                <input type="radio" name="Ntalla" value="38">38
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Café">Café
+                                <input type="radio" name="Ncolor" value="Negro">Negro
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+        <!-- Sexto producto del catálogo -->
+        <div class="pant">
+            <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/883034638_1/w=1500,h=1500" width="310" height="360" alt="Pantalón Slim Fit Algodón Hombre Basement">
+            <h3>Pantalón Cargo para Hombre Cargo Ecko</h3>
+            <br>
+            <p class="precio">Precio: $129.990 COP</p>
+            <br>
+            <p>Descripción: Pantalón formal en color café, ideal para eventos casuales y formales.</p>
+            <br><br>
+            <table border="1" cellspacing="0" align="center" width="70%">
+                <tr align="center">
+                    <th colspan="5">Tallas Disponibles</th>
+                </tr>
+                <tr align="center">
+                    <td>30</td>
+                    <td>32</td>
+                    <td>34</td>
+                    <td>36</td>
+                    <td>38</td>
+                </tr>
+            </table>
+            <br>
+            <form action="/registrardatos.php" method="post">
+                <details>
+                    <summary>Escoja el tipo de talla.</summary>
+                    <p>
+                        <div style="display: inline-block;">
+                            <input type="radio" name="Ntalla" value="30">30
+                            <input type="radio" name="Ntalla" value="32">32
+                            <input type="radio" name="Ntalla" value="34">34
+                            <input type="radio" name="Ntalla" value="36">36
+                            <input type="radio" name="Ntalla" value="38">38
+                        </div>
+                    </p>
+                </details>
+                <br>
+                <details>
+                    <summary>Tipo de colores.</summary>
+                    <p>
+                        <div style="display: inline-block;">
+                            <input type="radio" name="Ncolor" value="Café">Café
+                            <input type="radio" name="Ncolor" value="Negro">Negro
+                        </div>
+                    </p>
+                </details>
+                <br>
+                <button class="animated-button">
+                    <span>Comprar</span>
+                    <span></span>
+                </button>
+            </form>
+        </div>
+        <!-- Septimo producto del catálogo -->
+        <div class="pant">
+            <img src="https://static.zara.net/assets/public/4ca7/2902/5efc4412b131/09c29ae2a1a7/00706251800-a1/00706251800-a1.jpg?ts=1699871278535&w=455" width="300" height="400" alt="Pantalón Slim Fit Algodón Hombre Basement">
+            <h3>Pantalón estructura confort</h3>
+            <br>
+            <p class="precio">Precio: $199,900 COP</p>
+            <br>
+            <p>Descripción: Pantalón estructura, ideal para eventos casuales y formales.</p>
+            <br><br>
+            <table border="1" cellspacing="0" align="center" width="70%">
+                <tr align="center">
+                    <th colspan="5">Tallas Disponibles</th>
+                </tr>
+                <tr align="center">
+                    <td>30</td>
+                    <td>32</td>
+                    <td>34</td>
+                    <td>36</td>
+                    <td>38</td>
+                </tr>
+            </table>
+            <br>
+            <form action="/registrardatos.php" method="post">
+                <details>
+                    <summary>Escoja el tipo de talla.</summary>
+                    <p>
+                        <div style="display: inline-block;">
+                            <input type="radio" name="Ntalla" value="30">30
+                            <input type="radio" name="Ntalla" value="32">32
+                            <input type="radio" name="Ntalla" value="34">34
+                            <input type="radio" name="Ntalla" value="36">36
+                            <input type="radio" name="Ntalla" value="38">38
+                        </div>
+                    </p>
+                </details>
+                <br>
+                <details>
+                    <summary>Tipo de colores.</summary>
+                    <p>
+                        <div style="display: inline-block;">
+                            <input type="radio" name="Ncolor" value="Café">Café
+                            <input type="radio" name="Ncolor" value="Negro">Negro
+                        </div>
+                    </p>
+                </details>
+                <br>
+                <button class="animated-button">
+                    <span>Comprar</span>
+                    <span></span>
+                </button>
+            </form>
+        </div>
+    <!-- Octavo producto del catálogo -->
+    <div class="pant">
+        <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/882875110_1/w=1500,h=1500" width="310" height="360" alt="Pantalón Slim Fit Algodón Hombre Basement">
+        <h3>Pantalón Chino para Hombre Slim Newboat</h3>
+        <br>
+        <p class="precio">Precio: $119.990 COP</p>
+        <br>
+        <p>Descripción: Pantalones chinos de algodón slim para hombre, ideal para cualquier temporada. Disponible en beige, negro grisáceo y azul oscuro.</p>
+        <br><br>
+        <table border="1" cellspacing="0" align="center" width="70%">
+            <tr align="center">
+                <th colspan="5">Tallas Disponibles</th>
+            </tr>
+            <tr align="center">
+                <td>30</td>
+                <td>32</td>
+                <td>34</td>
+                <td>36</td>
+                <td>38</td>
+            </tr>
+        </table>
+        <br>
+        <form action="/registrardatos.php" method="post">
+            <details>
+                <summary>Escoja el tipo de talla.</summary>
+                <p>
+                    <div style="display: inline-block;">
+                        <input type="radio" name="Ntalla" value="30">30
+                        <input type="radio" name="Ntalla" value="32">32
+                        <input type="radio" name="Ntalla" value="34">34
+                        <input type="radio" name="Ntalla" value="36">36
+                        <input type="radio" name="Ntalla" value="38">38
+                    </div>
+                </p>
+            </details>
+            <br>
+            <details>
+                <summary>Tipo de colores.</summary>
+                <p>
+                    <div style="display: inline-block;">
+                        <input type="radio" name="Ncolor" value="Café">Café
+                        <input type="radio" name="Ncolor" value="Negro">Negro
+                    </div>
+                </p>
+            </details>
+            <br>
+            <button class="animated-button">
+                <span>Comprar</span>
+                <span></span>
+            </button>
+        </form>
+    </div>
+    </div>
+        <div class="posicion-boton">
+            <a href="catalogo_principal_pantalones.html"><button class="button">Volver al Catalogo Principal</button></a>
+        </div>
+    </font>
+</body>
+</html>

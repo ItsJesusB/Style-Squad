@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Pantalones Deportivos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style_catalogo_principal_accesorios.css"> -->
+    <!-- <link rel="stylesheet" href="style_paginas_accesorios.css"> -->
+    <link rel="website icon" type="png" href="imagenes_diseño/logo.png">
+</head>
+<body class="container">
+    <font face="Arial">
+        <div class="header">
+            <div class="header-deportivo">
+                <a href="pagina principal.html"><img src="imagenes_diseño/logo.png" alt="Logo" class="logo"></a>
+                <h1>Catálogo de Pantalones Deportivos</h1>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            
+            <!-- Primer producto del catálogo -->
+            <div class="pant">
+                <img src="https://cdn.sport-shop.pl/p/v1/big/0adc5dfa794ed3bbc46d1b7bfd8e4fce.jpg" width="320" height="400" alt="Pantalón Adidas Tiro 21">
+                <h3>Pantalón Adidas Tiro 21</h3>
+                <p class="precio">Precio: $180,000 COP</p>
+                <br>
+                <p>Descripción: Pantalón deportivo con materiales reciclados, ideal para entrenamiento y uso casual.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>XS</td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="XS">XS
+                                <input type="radio" name="Ntalla" value="S">S
+                                <input type="radio" name="Ntalla" value="M">M
+                                <input type="radio" name="Ntalla" value="L">L
+                                <input type="radio" name="Ntalla" value="XL">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Negro">Negro
+                                <input type="radio" name="Ncolor" value="Azul Marino">Azul Marino
+                                <input type="radio" name="Ncolor" value="Gris">Gris
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Segundo producto del catálogo -->
+            <div class="pant">
+                <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/dce849c3-85d0-4213-9667-94d88f68b1e5/sportswear-club-fleece-mens-cargo-pants-NhXSTS.jpg" width="300" height="400" alt="Pantalón Nike Sportswear Club Fleece">
+                <h3>Pantalón Nike Sportswear Club Fleece</h3>
+                <p class="precio">Precio: $200,000 COP</p>
+                <br>
+                <p>Descripción: Tela de fleece para mayor comodidad y calidez, con ajuste relajado.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                        <td>XXL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="S">S
+                                <input type="radio" name="Ntalla" value="M">M
+                                <input type="radio" name="Ntalla" value="L">L
+                                <input type="radio" name="Ntalla" value="XL">XL
+                                <input type="radio" name="Ntalla" value="XXL">XXL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Negro">Negro
+                                <input type="radio" name="Ncolor" value="Gris Oscuro">Gris Oscuro
+                                <input type="radio" name="Ncolor" value="Azul">Azul
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Tercer producto del catálogo -->
+            <div class="pant">
+                <img src="https://th.bing.com/th/id/OIP.PW9wDNu550GRTRjPVpj59QHaHa?rs=1&pid=ImgDetMain" width="300" height="400" alt="Pantalón Puma Essentials">
+                <h3>Pantalón Puma Essentials</h3>
+                <p class="precio">Precio: $150,000 COP</p>
+                <br>
+                <p>Descripción: Diseño clásico con logo Puma, adecuado para entrenamiento y actividades diarias.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>XS</td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="XS">XS
+                                <input type="radio" name="Ntalla" value="S">S
+                                <input type="radio" name="Ntalla" value="M">M
+                                <input type="radio" name="Ntalla" value="L">L
+                                <input type="radio" name="Ntalla" value="XL">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Negro">Negro
+                                <input type="radio" name="Ncolor" value="Gris">Gris
+                                <input type="radio" name="Ncolor" value="Azul Marino">Azul Marino
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Cuarto producto del catálogo -->
+            <div class="pant">
+                <img src="https://underarmour.scene7.com/is/image/Underarmour/V5-1305203-001_FC_Main?scl=1&fmt=jpg&qlt=80&wid=612&hei=650&size=612,650&cache=on,off&bgc=f0f0f0&resMode=sharp2" width="300" height="400" alt="Pantalón Under Armour Rival Fleece">
+                <h3>Pantalón Under Armour Challenger II</h3>
+                <p class="precio">Precio: $220,000 COP</p>
+                <br>
+                <p>Descripción: Material ligero y elástico, ideal para entrenamiento de alta intensidad</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="S">S
+                                <input type="radio" name="Ntalla" value="M">M
+                                <input type="radio" name="Ntalla" value="L">L
+                                <input type="radio" name="Ntalla" value="XL">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Negro">Negro
+                                <input type="radio" name="Ncolor" value="Gris">Azul
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Quinto producto del catálogo -->
+            <div class="pant">
+                <img src="https://th.bing.com/th/id/R.131ca59e9c62622c06ff662c2e1b4430?rik=ZWAmdf1TBXAeYA&pid=ImgRaw&r=0" width="300" height="400" alt="Pantalón Under Armour Rival Fleece">
+                <h3>Pantalón Reebok Training Essentials</h3>
+                <p class="precio">Precio: $160,000 COP</p>
+                <br>
+                <p>Descripción: Diseño funcional con bolsillos y ajuste cómodo.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="S">S
+                                <input type="radio" name="Ntalla" value="M">M
+                                <input type="radio" name="Ntalla" value="L">L
+                                <input type="radio" name="Ntalla" value="XL">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Negro">Negro
+                                <input type="radio" name="Ncolor" value="Gris">Gris
+                                <input type="radio" name="Ncolor" value="Azul">Azul
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Sexto producto del catálogo -->
+            <div class="pant">
+                <img src="https://www.stampalo.es/1156130-thickbox_default/joma-sport-pantalon-de-chandal-ajustado-hombre-nino-combi-suez.jpg" width="300" height="400" alt="Pantalón Under Armour Rival Fleece">
+                <h3>Pantalón Joma Combi</h3>
+                <p class="precio">Precio: $130,000 COP</p>
+                <br>
+                <p>Descripción: Cofeccionado con materiales transpirables, perfecto para diversas actividades deportivas.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Tallas Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>XS</td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>Escoja el tipo de talla.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="XS">XS
+                                <input type="radio" name="Ntalla" value="S">S
+                                <input type="radio" name="Ntalla" value="M">M
+                                <input type="radio" name="Ntalla" value="L">L
+                                <input type="radio" name="Ntalla" value="XL">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>Tipo de colores.</summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="Negro">Negro
+                                <input type="radio" name="Ncolor" value="Gris">Gris
+                                <input type="radio" name="Ncolor" value="Azul Marino">Azul Marino
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="posicion-boton">
+            <a href="catalogo_principal_pantalones.html"><button class="button">Volver al Catalogo Principal</button></a>
+        </div>
+    </font>
+</body>
+</html>

@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow: auto;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header {
+    background-image: url('https://fondosmil.co/fondo/17538.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header h1 {
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.048);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 180px;
+    height: auto;
+}
+.tarjetas {
+    width: 290px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    padding: 35px;
+    text-align: center;
+    transition: transform 0.3s;
+    height: 460px;
+}
+.tarjetas-Bolsos {
+    width: 290px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    padding: 35px;
+    text-align: center;
+    transition: transform 0.3s;
+    height: 515px;
+}
+.imagen-productos{
+    width:280px;
+    height:180px;
+}
+.precio-descripcion {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+.lista-producto {
+        list-style-position: inside; /* Centra los puntos de la lista */
+        text-align: justify; /* Centra el texto */
+}
+
+.lista-producto li {
+    margin: 4px 0; /*espaciado entre cada li*/
+}
+
+.animated-button {
+margin-top:15px ;
+position: relative;
+display: inline-block;
+padding: 12px 24px;
+border: none;
+font-size: 16px;
+background-color: inherit;
+border-radius: 100px;
+font-weight: 600;
+color: #000000;
+box-shadow: 0 0 0 2px #2196F3;
+cursor: pointer;
+overflow: hidden;
+transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:last-child {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 20px;
+height: 20px;
+background-color: #2196F3;
+border-radius: 50%;
+opacity: 0;
+transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+position: relative;
+z-index: 1;
+}
+
+.animated-button:hover {
+box-shadow: 0 0 0 5px #2195f360;
+color: #ffffff;
+}
+
+.animated-button:active {
+scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+width: 150px;
+height: 150px;
+opacity: 1;
+}
+
+.pant {
+    width: 340px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.pant img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.pant:hover {
+    transform: translateY(-5px);
+}
+.pant:hover img {
+    transform: scale(1.05);
+}
+.pant h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+.pant p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.posicion-boton{
+    margin-left:40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.boton:hover {
+    background-color: #44404077;
+}
+.button {
+--color: #4dafff;
+padding: 0.8em 1.7em;
+background-color: transparent;
+border-radius: .3em;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+transition: .5s;
+font-weight: 400;
+font-size: 17px;
+border: 2px solid;
+font-family: inherit;
+text-transform: uppercase;
+color: var(--color);
+z-index: 1;
+}
+
+.button::before, .button::after {
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+transform: translate(-50%, -50%);
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+background-color: var(--color);
+transition: 1s ease;
+}
+
+.button::before {
+top: -1em;
+left: -1em;
+}
+
+.button::after {
+left: calc(100% + 1em);
+top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+height: 430px;
+width: 510px; /*Aplica el ancho a la animacion del boton */
+}
+
+.button:hover {
+color: rgb(255, 255, 255);
+}
+
+.button:active {
+filter: brightness(.8);
+}
+
+

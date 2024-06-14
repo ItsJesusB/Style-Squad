@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalones de Trajes</title>
+    <!-- Vincula el archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_paginas_accesorios.css">
+    <!-- <link rel="stylesheet" href="style_catalogo_principal_accesorios.css"> -->
+    <link rel="website icon" type="png"
+    href="imagenes_diseño/logo.png">
+</head>
+<body class="container">
+    <!-- Fuente de letra para todo el documento -->
+    <font face="Arial">
+        <!-- Encabezado con el logo y el título del catálogo -->
+        <div class="header">
+             <!-- esta "clase-trajes" es para especificar en el css donde vamos a color las imagenes de fondo especifico -->
+            <div class="header-trajes">
+                <a href="pagina principal.html"><img src="imagenes_diseño/logo.png" alt="Logo" class="logo"></a>
+                <h1>Catálogo de Pantalones de Trajes</h1>
+            </div>
+        </div>
+        <br><br><br>
+        <!-- Contenedor de los productos, utiliza flexbox para distribuir los productos -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Primer producto del catálogo -->
+            <div class="pant">
+                <!-- Imagen del producto -->
+                <img src="https://th.bing.com/th/id/R.995ed9ab334929eb1d9579d8433fec86?rik=kTekgCCj4BaREg&pid=ImgRaw&r=0" width="320" height="400" alt="Pantalón Clásico Azul">
+                <!-- Nombre del producto -->
+                <h3>Pantalón Clásico Azul</h3>
+                <!-- Precio del producto -->
+                <p class="precio">Precio: $200,000 COP</p>
+                <br>
+                <!-- Descripción del producto -->
+                <p>Descripción: Pantalón azul de corte clásico, ideal para el trabajo y eventos formales.</p>
+                <br><br>
+                <!-- Tabla con las tallas disponibles -->
+                <table border="1" cellspacing="0"  align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="4">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <!-- Formulario para la selección de talla y color, y compra del producto -->
+                <form action="/registrardatos.php" method="post">
+                    <!-- Detalle para seleccionar la talla -->
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <!-- Opciones de tallas -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="1">S   
+                                <input type="radio" name="Ntalla" value="2">M
+                                <input type="radio" name="Ntalla" value="3">L
+                                <input type="radio" name="Ntalla" value="4">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Detalle para seleccionar el color -->
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <!-- Opciones de colores -->
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Azul
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <!-- Botón para comprar el producto -->
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Repite el mismo formato para los demás productos -->
+            <!-- Segundo producto del catálogo -->
+            <div class="pant">
+                <img src="https://www.simonjersey.com/es/images/pantalones-traje-hombre-regular-negro-p1015-67176_image.jpg" width="320" height="400" alt="Pantalón Traje Negro">
+                <h3>Pantalón de Traje Clásico</h3>
+                <p class="precio">Precio: $250,000 COP</p>
+                <br>
+                <p>Descripción: Un pantalón de traje clásico con un corte elegante y atemporal, perfecto para ocasiones formales y profesionales.</p>
+                <br><br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>XS</td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="1">XS
+                                <input type="radio" name="Ntalla" value="2">S    
+                                <input type="radio" name="Ntalla" value="3">M
+                                <input type="radio" name="Ntalla" value="4">L
+                                <input type="radio" name="Ntalla" value="5">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Negro
+                                <input type="radio" name="Ncolor" value="2">Azul Marino
+                                <input type="radio" name="Ncolor" value="3">Azul Oscuro
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Tercer producto del catálogo -->
+            <div class="pant">
+                <img src="https://th.bing.com/th/id/OIP.6sGQCK2oL8i06cZx4fFwwwAAAA?rs=1&pid=ImgDetMain" width="320" height="400" alt="Pantalón de Traje Slim Fit">
+                <h3>Pantalón de Traje Slim Fit</h3>
+                <p class="precio">Precio: $280,000 COP</p>
+                <br>
+                <p>Descripción: Este pantalón de traje ofrece un ajuste moderno y estilizado, ideal para aquellos que prefieren un aspecto más contemporáneo.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="4">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="1">S    
+                                <input type="radio" name="Ntalla" value="2">M
+                                <input type="radio" name="Ntalla" value="3">L
+                                <input type="radio" name="Ntalla" value="4">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Negro
+                                <input type="radio" name="Ncolor" value="2">Gris Carbón
+                                <input type="radio" name="Ncolor" value="3">Azul Oscuro
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Cuarto producto del catálogo -->
+            <div class="pant">
+                <img src="https://img.ltwebstatic.com/images3_pi/2022/08/24/166131739659acabe4909f9ae6b7c7046a1ac3b7cc_thumbnail_720x.webp" width="320" height="400" alt="Pantalón de Traje de Tweed">
+                <h3>Pantalón de Traje de Tweed</h3>
+                <br>
+                <p class="precio">Precio: $320,000 COP</p>
+                <br>
+                <p>Descripción: Un pantalón de traje clásico con un corte elegante y atemporal, perfecto para ocasiones formales y profesionales.</p>
+                <br><br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>XS</td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="1">XS
+                                <input type="radio" name="Ntalla" value="2">S    
+                                <input type="radio" name="Ntalla" value="3">M
+                                <input type="radio" name="Ntalla" value="4">L
+                                <input type="radio" name="Ntalla" value="5">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Marrón
+                                <input type="radio" name="Ncolor" value="2">Gris
+                                <input type="radio" name="Ncolor" value="3">Beige
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Quinto producto del catálogo -->
+            <div class="pant">
+                <img src="https://i.pinimg.com/736x/fc/74/1c/fc741cfe8cc635e97b6b2c4bb54a7c43.jpg" width="320" height="400" alt="Pantalón de Traje a Cuadros">
+                <h3>Pantalón de Traje a Cuadros</h3>
+                <br>
+                <p class="precio">Precio: $270,000 COP</p>
+                <br>
+                <p>Descripción: Este pantalón de traje presenta un diseño a cuadros clásico, perfecto para aquellos que desean agregar un toque de estilo y personalidad a su atuendo formal.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>XS</td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="1">XS
+                                <input type="radio" name="Ntalla" value="2">S    
+                                <input type="radio" name="Ntalla" value="3">M
+                                <input type="radio" name="Ntalla" value="4">L
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Gris y Negro
+                                <input type="radio" name="Ncolor" value="2">Azul y Blanco
+                                <input type="radio" name="Ncolor" value="3">Marrón y Crema
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Sexto producto del catálogo -->
+            <div class="pant">
+                <img src="https://images.asos-media.com/products/pantalones-de-traje-grises-de-corte-slim-de-ben-sherman/202488267-1-grey" width="320" height="400" alt="Pantalón de Traje de Corte Italiano">
+                <h3>Pantalón de Traje de Corte Italiano</h3>
+                <br>
+                <p class="precio">Precio: $300,000 COP</p>
+                <br>
+                <p>Descripción: Inspirado en la elegancia italiana, este pantalón de traje cuenta con corte ajustado y detalles refinados que realzan la silueta masculina con un toque de sofisticación europea.</p>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="1">S    
+                                <input type="radio" name="Ntalla" value="2">M
+                                <input type="radio" name="Ntalla" value="3">L
+                                <input type="radio" name="Ntalla" value="4">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Negro
+                                <input type="radio" name="Ncolor" value="2">Gris Antacita
+                                <input type="radio" name="Ncolor" value="3">Azul Marino
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Quinto producto del catálogo -->
+            <div class="pant">
+                <img src="https://i.pinimg.com/736x/fc/74/1c/fc741cfe8cc635e97b6b2c4bb54a7c43.jpg" width="320" height="400" alt="Pantalón de Traje a Cuadros">
+                <h3>Pantalón de Traje a Cuadros</h3>
+                <br>
+                <p class="precio">Precio: $270,000 COP</p>
+                <br>
+                <p>Descripción: Este pantalón de traje presenta un diseño a cuadros clásico, perfecto para aquellos que desean agregar un toque de estilo y personalidad a su atuendo formal.</p>
+                <br>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>XS</td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="1">XS
+                                <input type="radio" name="Ntalla" value="2">S    
+                                <input type="radio" name="Ntalla" value="3">M
+                                <input type="radio" name="Ntalla" value="4">L
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Gris y Negro
+                                <input type="radio" name="Ncolor" value="2">Azul y Blanco
+                                <input type="radio" name="Ncolor" value="3">Marrón y Crema
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!-- Sexto producto del catálogo -->
+            <div class="pant">
+                <img src="https://images.asos-media.com/products/pantalones-de-traje-grises-de-corte-slim-de-ben-sherman/202488267-1-grey" width="320" height="400" alt="Pantalón de Traje de Corte Italiano">
+                <h3>Pantalón de Traje de Corte Italiano</h3>
+                <br>
+                <p class="precio">Precio: $300,000 COP</p>
+                <br>
+                <p>Descripción: Inspirado en la elegancia italiana, este pantalón de traje cuenta con corte ajustado y detalles refinados que realzan la silueta masculina con un toque de sofisticación europea.</p>
+                <table border="1" cellspacing="0" align="center" width="70%">
+                    <tr align="center">
+                        <th colspan="5">Talla Disponibles</th>
+                    </tr>
+                    <tr align="center">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                </table>
+                <br>
+                <form action="/registrardatos.php" method="post">
+                    <details>
+                        <summary>
+                            Escoja el tipo de talla.
+                        </summary>
+                        <p>
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ntalla" value="1">S    
+                                <input type="radio" name="Ntalla" value="2">M
+                                <input type="radio" name="Ntalla" value="3">L
+                                <input type="radio" name="Ntalla" value="4">XL
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>
+                            Tipo de colores.
+                        </summary>
+                        <p> 
+                            <div style="display: inline-block;">
+                                <input type="radio" name="Ncolor" value="1">Negro
+                                <input type="radio" name="Ncolor" value="2">Gris Antacita
+                                <input type="radio" name="Ncolor" value="3">Azul Marino
+                            </div>
+                        </p>
+                    </details>
+                    <br>
+                    <button class="animated-button">
+                        <span>Comprar</span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="posicion-boton">
+            <!-- Botón para volver al catálogo principal -->
+            <a href="catalogo_principal_pantalones.html"><button class="button">Volver al Catalogo Principal</button></a>
+        </div>
+    </font>
+</body>
+</html>
